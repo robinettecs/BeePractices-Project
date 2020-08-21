@@ -1,0 +1,76 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww18860\viewh11240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Code and Table connections:\
+\
+\
+\
+
+\f1\b BOLD
+\f0\b0  font = Folder NAME\
+** = Code file\
+*** =  Data table(.csv)\
+\
+
+\f1\b REPORTS 
+\f0\b0 contains .pdf files with visualizations of the survey questions along with supplementary descriptive statistics\
+contains raw data, cleaned data, and the code required to replicate the process.\
+\
+
+\f1\b STATA CODE
+\f0\b0  folder contains all code necessary to replicate data cleansing and statistical analysis.\
+	~Num_Cleansing\
+	~Coding_Labelling\
+	~String_Splitting\
+	~T-tests\
+\
+	\
+
+\f1\b NUM RAW
+\f0\b0  data for all three surveys were imported and cleaned in Stata\
+	~Use 
+\f1\b STATA CODE
+\f0\b0  files -> ABR_Num_Cleansing,** IDM_Num_Cleansing**, VM_Num_Cleansing** 
+\f2\i for
+\f0\i0  :\
+		importing and cleansing 
+\f1\b RAW 
+\f0\b0 data files -> ABR_Num_Raw***, IDM_Num_Raw ***, and VM_Num_Raw*** respectively. \
+		(Change file path to local directory in code when importing)\
+\
+
+\f1\b NUM_CLEAN 
+\f0\b0 data files -> ABR_Num_Cleaned***, IDM_Num_Cleaned***, VM_NUM_Cleaned*** in .csv format; (output of Stata Code above);		\
+\
+\
+
+\f1\b CODED_LABELED 
+\f0\b0 folder ->\
+		Source files =  
+\f1\b NUM_CLEAN
+\f0\b0  -> ABR_Num_Cleaned***, IDM_Num_Cleaned***, VM_Num_Cleaned*** (Set file path to local directory when exporting). \
+		Use 
+\f1\b STATA CODE
+\f0\b0 \ul  \ulnone  files ->  
+\f1\b Coding_Labelling 
+\f0\b0 -> ABR_Code_Labelling**, IDM_Code_Labelling**, VM_Code_Labelling** 
+\f2\i for:\
+			
+\f0\i0 importing and cleansing 
+\f2\i source files\
+		\
+		Output 
+\f0\i0 data files -> ABR_Code_Labelling***, IDM_Code_Labelling***, VM_Code_Labelling*** in .dta format;\
+	\
+		\
+\
+\
+\
+		\
+\
+}
